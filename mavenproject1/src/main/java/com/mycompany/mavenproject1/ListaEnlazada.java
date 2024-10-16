@@ -24,4 +24,8 @@ public class ListaEnlazada {
         }
         System.out.println("Tarea '" + tarea + "' con prioridad " + prioridad + " agregada.");
     }
+     public NodoTareas obtenerCabeza() {
+        return cabeza;
+    }
 }
+
