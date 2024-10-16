@@ -27,5 +27,17 @@ public class ListaEnlazada {
      public NodoTareas obtenerCabeza() {
         return cabeza;
     }
+      public void mostrarTareas() {
+        NodoTareas actual = cabeza;
+        if (actual == null) {
+            System.out.println("No hay tareas en la lista.");
+            return;
+        }
+        System.out.println("Lista de Tareas:");
+        while (actual != null) {
+            System.out.println("Tarea: " + actual.tarea + ", Prioridad: " + actual.prioridad);
+            actual = actual.siguiente;
+        }
+    }
 }
 
